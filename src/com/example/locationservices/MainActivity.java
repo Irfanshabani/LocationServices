@@ -1,5 +1,8 @@
 package com.example.locationservices;
 
+import java.util.Collections;
+import java.util.Comparator;
+
 import android.app.Activity;
 import android.content.Context;
 import android.location.Location;
@@ -49,6 +52,53 @@ public class MainActivity extends Activity implements LocationListener {
     @Override
 	public void onLocationChanged(Location location) {
     		txtLokacioniAktiv.setText("Latitude: " + location.getLatitude() + " Longitude: " + location.getLongitude());
+    		
+//    		currentLocation = location;
+//    		final Location tmpCurrLoc = location;
+//
+//    		Collections.sort(mStoryList, new Comparator<Story>() {
+//    			@Override
+//    			public int compare(Story object1, Story object2) {
+//    				Location loc = new Location("Minimum Distance");
+//    				loc.setLatitude(object1.getLatitude());
+//    				loc.setLongitude(object1.getLongitude());
+//
+//    				Location loc2 = new Location("Minimum Distance");
+//    				loc2.setLatitude(object2.getLatitude());
+//    				loc2.setLongitude(object2.getLongitude());
+//
+//    				if ((tmpCurrLoc.distanceTo(loc) < tmpCurrLoc.distanceTo(loc2))) {
+//    					return -1;
+//    				} else if ((tmpCurrLoc.distanceTo(loc) > tmpCurrLoc.distanceTo(loc2))) {
+//    					return 1;
+//    				}
+//
+//    				return 0;
+//
+//    			}
+//    		});
+//
+//
+//    		storyListAdapter.notifyDataSetChanged();
+    		
+//			ne Adapter
+//    		Location loc = new Location("Map Location");
+//    		loc.setLatitude(mStoryList.get(position).getLatitude());
+//    		loc.setLongitude(mStoryList.get(position).getLongitude());
+//
+//    		float distanceInMeters = 0; 
+//
+//    		if(currentLocation != null) {
+//    			distanceInMeters = currentLocation.distanceTo(loc);
+//    		}
+//
+//    		Float flt = new Float(distanceInMeters);
+//
+//    		if (distanceInMeters < 1000) {
+//    			viewHolder.getStorySubtitle().setText(flt.intValue()+"m");
+//    		} else {
+//    			viewHolder.getStorySubtitle().setText(Math.round(flt.intValue() * .001) +"km");
+//    		}
 	}
 
 
