@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.locationservices.MainActivity" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lokacioni i fundit:" />
+
+    <TextView
+        android:id="@+id/txtLokacioniFundit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/txtLokacioniAktiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="103dp"
+        android:text="Lokacioni Aktiv:" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtLokacioniAktiv"
+        android:layout_alignBottom="@+id/txtLokacioniAktiv"
+        android:layout_alignRight="@+id/txtLokacioniFundit"
+        android:layout_toRightOf="@+id/textView2"
+        android:text="Lokacioni Aktiv:" />
+
+</RelativeLayout>
